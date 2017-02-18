@@ -1,0 +1,255 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+.section_1
+	height: 390px
+	text-align: center
+	color: $font_color
+	h2, h3
+		text-transform: uppercase
+		padding: 0
+		margin: 0
+		letter-spacing: 1px
+		line-height: 30px
+		font-weight: normal
+	.p_why
+		margin-top: 60px
+		padding: 0
+		text-transform: uppercase
+		font-size: em(16px)
+	p
+		font-size: em(12px)
+		margin-top: 30px
+	.buttons
+		text-align: center
+		margin-top: 40px
+		.btn
+			display: inline-block
+			padding: 12px 50px
+			text-transform: uppercase
+			color: #fff
+			background-color: #555
+			font-size: em(15px)
+			&:hover
+				background-color: #7c7c7d
+
+.section_2
+	height: auto
+	margin-bottom: 51px
+	text-align: center
+	color: $font-color
+	h2
+		text-transform: uppercase
+		padding: 0
+		margin: 0
+	p
+		font-size: em(12px)
+		margin: 30px 0 30px 0
+	.pict
+		.pict_wrap
+			display: inline-block
+			padding: 0
+			height: 227px
+			width: 240px
+			background-color: #555
+			overflow: hidden
+			margin-left: -4px
+			margin-bottom: -7px
+			img
+				width: 100%
+				border: none
+			.car
+				height: 250px
+				width: 380px
+				border: none
+			.pict_desk
+				display: block
+				width: 380px
+				height: 125px
+				img
+					float: left
+					width: auto
+					height: 100%
+			.pict_wedding
+				display: block
+				width: 380px
+				height: 125px
+				img
+					float: left
+					width: 65%
+					height: 100%
+
+.section_3
+	height: auto
+	text-align: center
+	background-color: #656565
+	background-image: url(../img/footer_bg.jpg)
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	color: #fff
+	h4
+		text-transform: uppercase
+		font-weight: normal
+	.post
+		h4
+			margin-bottom: 24px
+	ul
+
+		li
+			text-align: left
+			font-size: em(12px)
+			line-height: em(30px)
+	p
+		font-size: em(12px)
+		text-align: left
+	.creat_descr
+		line-height: em(17px)
+		address
+			padding-top: 16px
+			p
+				font-style: normal
+				font-size: em(12px)
+			.addr
+				text-transform: uppercase
+				font-style: normal
+				font-size: em(14px)
+	.search_icon
+		.cf:before, .cf:after
+			content: ''
+			display: table
+		.cf:after
+			clear: both
+		.search
+			width: 220px
+			float: right
+			margin-right: 25px
+		.forms
+			input
+				width: 140px
+				height: 30px
+				float: left
+				border: 0
+				padding: 3px 5px
+				background: #eee
+				color: #000
+				font-size: em(13px)
+				&:focus
+					background: #fff
+					outline: 0
+					box-shadow: 0 0 2px rgba(0,0,0,.8) inset
+				&::placeholder
+					font-weight: normal
+					color: #000
+					text-transform: uppercase
+					letter-spacing: 1px
+					font-size: em(14px)
+				&:focus::placeholder
+					opacity: 1
+					transition: opacity 0.3s ease
+					text-overflow: ellipsis
+			button
+				overflow: visible
+				position: relative
+				float: right
+				background-color: #d73240
+				border: 0
+				padding: 0
+				width: 80px
+				height: 30px
+				text-transform: uppercase
+				color: #fff
+				cursor: pointer
+				font-size: em(13px)
+				&:hover
+					background-color: #e54040
+	.soc_icons
+		h4
+			float: right
+			margin-right: 25px
+		.soc
+			float: right
+			margin-right: 25px
+			a
+				display: inline-block
+				width: 43px
+				height: 45px
+				background: url(../img/ic_sprites2.png) no-repeat;
+			.sc_fb
+				&:hover
+					background-position: 0 -44px
+			.sc_tw	
+				background-position: -43px 0
+				&:hover
+					background-position: -43px -44px
+			.sc_rss
+				background-position: -86px 0
+				&:hover
+					background-position: -86px -44px
+			.sc_g	
+				background-position: -129px 0
+				&:hover
+					background-position: -129px -44px
+
+footer
+	height: auto
+	background-color: #d73240
+	p
+		font-size: em(12px)
+		color: #fff
+		margin-left: 25px
+	.bottom_menu
+		float: right
+		margin-right: 15px
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			text-align: center
+			text-transform: uppercase
+		li
+			display: inline-block
+			padding: 5px 10px 5px 0
+			a
+				color: #fff
+				font-size: em(12px)
+				font-weight: bold
+				&:hover
+					border-bottom: 1px dashed #fff
+					text-decoration: none
+
+
+
+//ALWAYS END
+@import "media"

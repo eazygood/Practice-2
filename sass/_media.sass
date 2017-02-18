@@ -1,0 +1,232 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+	
+	.main_logo
+		.main_l
+			margin-top: 85px
+
+	.main_footer
+		.bottom_menu
+			position: relative
+			width: 100px
+			float: none
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.section_3
+		.search_icon
+			display: inline-block
+			text-align: center
+			.search
+				margin-right: 0
+		.soc_icons
+			h4
+				float: none
+				margin-right: 0
+				margin-bottom: 20px
+			.soc	
+				float: none
+				margin-right: 0
+				margin-bottom: 25px
+				a
+					text-align: center
+	footer
+		p
+			text-align: center
+		.bottom_menu
+			float: none
+			margin-top: 2px
+			margin-right: 0
+			li
+				padding: 0 7px 0 0
+		.copy_r
+			font-size: em(13px)
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.main_header
+		.top_menu
+			display: none
+			position: absolute
+			min-width: 200px
+			text-align: right
+			right: 9px
+			top: 60px
+			background-color: rgba(200, 203, 206,.9)
+			border-top: #232b3b 1px solid
+			z-index: 2
+			li
+				display: block
+				padding: 0
+				margin: 0
+				border-bottom: #232b3b 1px solid
+				text-align: right
+				a
+					display: block
+					line-height: 20px
+					padding: 5px 10px 5px 2px
+					background-color: transparent
+					transition: all .5s ease
+					&:hover
+						background-color: rgba(224, 225, 227, 0.9)
+						color: $logo-color
+						border-bottom: none
+					&:focus
+						background-color: rgba(224, 225, 227, 0.9)
+						color: $logo-color
+						border-bottom: none
+						text-decoration: none
+	.toggle_wrap
+		float: right
+		margin-top: 15px
+
+	.section_3
+		.post
+			h4
+				margin: 50px 0 10px 0
+		.points
+			display: inline-block
+			text-align: center
+			margin: 0
+		.creat_descr
+			p
+				text-align: center
+				padding: 0
+				margin: 0
+		address
+			display: inline-block
+
+	footer
+		.copy_r
+			p
+				margin-top: 15px
+		.bottom_menu
+				display: none
+				position: absolute
+				min-width: 200px
+				text-align: right
+				right: 9px
+				top: 40px
+				background-color: rgba(200, 203, 206,.9)
+				border-top: #232b3b 1px solid
+				z-index: 2
+				li
+					display: block
+					padding: 0
+					margin: 0
+					border-bottom: #232b3b 1px solid
+					text-align: right
+					a
+						display: block
+						line-height: 20px
+						padding: 5px 10px 5px 2px
+						background-color: transparent
+						transition: all .5s ease
+						&:hover
+							background-color: rgba(224, 225, 227, 0.9)
+							color: $logo-color
+							border-bottom: none
+						&:focus
+							background-color: rgba(224, 225, 227, 0.9)
+							color: $logo-color
+							border-bottom: none
+							text-decoration: none
+		.toggle_wrap
+			margin-top: 2px
+
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.main_header
+		.top_menu
+			width: 95%
+
+	.section_1
+		.h2_wrap
+			display: table
+			height: 90%
+			text-align: center
+			width: 30%
+			margin-left: auto
+			margin-right: auto
+			h2
+				display: table-cell
+				vertical-align: middle
+		h3
+			font-size: em(19px)
+		.p_why
+			margin-top: 30px
+
+	.section_2
+		padding-top: 100px
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+	.main_header
+		.top_menu
+			display: block !important
+			a
+				outline: none !important
+	footer
+		.bottom_menu
+			display: block !important
+			a
+				outline: none !important
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
